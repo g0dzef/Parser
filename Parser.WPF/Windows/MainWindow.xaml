@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Parser.WPF.Windows"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        WindowStartupLocation="CenterScreen"
+        Height="250" Width="500">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
 
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <TextBox Height="25" Width="250" Margin="5"/>
+            <Button Style="{StaticResource CustomButtonStyle}"  Height="25" Width="60"/>
+        </StackPanel>
+        
+
+        <ListView Grid.Row="1"/>
     </Grid>
 </Window>
