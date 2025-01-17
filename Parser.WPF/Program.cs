@@ -10,6 +10,7 @@ namespace Parser.WPF
             App.BuildConfig(App.configurationBuilder);
 
             var app = new App();
+            app.InitializeComponent();
             app.Run();
         }
 

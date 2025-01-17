@@ -7,6 +7,6 @@ namespace Parser.WPF.HostBuilder
     public static class WindowsRegistrator
     {
         public static IServiceCollection AddWindows(this IServiceCollection services) => services
-            .AddSingleton(s => new MainWindow(s.GetRequiredService<MainWindowViewModel>()));
+            .AddSingleton(s =>  new MainWindow(s.GetRequiredService<MainWindowViewModel>()));
     }
 }

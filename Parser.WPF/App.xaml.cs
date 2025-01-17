@@ -39,6 +39,7 @@ namespace Parser.WPF
         }
 
         public static void ConfigureServices(IServiceCollection services) => services
+            .AddServices()
             .AddWindows()
             .AddViewModel();
 
